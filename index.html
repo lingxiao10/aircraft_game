@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airplane Game</title>
+    <link rel="stylesheet" href="styles.css?r=3">
+</head>
+<body>
+    <div id="gameContainer">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="gameUI">
+            <div class="ui-left">
+                <div id="score">Score: 0</div>
+                <div id="highScore">High Score: 0</div>
+                <div id="currentWeapon">Weapon: Basic Laser</div>
+            </div>
+            <div class="ui-right">
+                <div id="health">Health: 100</div>
+                <div id="powerUpIndicators"></div>
+            </div>
+            <div id="gameOver" style="display: none;">
+                <h2>Game Over!</h2>
+                <p>Final Score: <span id="finalScore">0</span></p>
+                <button id="restartBtn">Restart Game</button>
+            </div>
+        </div>
+    </div>
+    <div id="instructions">
+        <h3>Controls:</h3>
+        <p>Arrow Keys / WASD - Move aircraft</p>
+        <p>Spacebar - Shoot</p>
+        <p>Keys 1-3 - Switch weapons</p>
+        <p>Click to start!</p>
+    </div>
+    <script src="game.js?r=3"></script>
+</body>
+</html>
